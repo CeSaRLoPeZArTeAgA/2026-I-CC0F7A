@@ -4,6 +4,8 @@
  */
 package pe.edu.uni.fc.cc.common;
 
+import java.nio.file.Paths;
+
 /**
  *
  * @author Usuario
@@ -45,11 +47,19 @@ public class Constants {
      
      public static final String ECC_ALGORITHM="EC";
      public static final String ECC_SIGN_ALGORITHM="SHA256withECDSA";
-     public static final String RSA_SIGN_ALGORITHM="SHA256WithRSA";
+     //public static final String RSA_SIGN_ALGORITHM="SHA256WithRSA";
      
      public static final String ECC_KEY_PARAMETER_SPEC="secp256r1";
      
      public static final byte[] AES_GCM_ADD="2026-I-CC07".getBytes();
+     
+      //para certificado CA
+     public static final String RSA_SIGN_ALGORITHM="SHA256withRSA";
+     public static final String BCFIPS_PROVIDER="BCFIPS";
+     
+     //file names
+     public static final String USER_HOME=System.getProperty("user.home");
+     public static final String USER_CD_FILENAME=Paths.get(USER_HOME,"user-cd.crt").toString();
 }
 
 
