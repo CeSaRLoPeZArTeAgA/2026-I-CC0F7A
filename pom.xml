@@ -13,6 +13,7 @@
         <module>Container</module>
         <module>Asymmetric</module>
         <module>DigitalEnvelope</module>
+        <module>PKI</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
