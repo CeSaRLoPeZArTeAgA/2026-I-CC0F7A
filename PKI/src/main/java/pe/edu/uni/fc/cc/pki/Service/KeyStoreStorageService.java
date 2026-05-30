@@ -87,7 +87,6 @@ public class KeyStoreStorageService {
             this.privateKey=privateKey;
             this.certificate=certificate;
         }
-        
         public PrivateKey getPrivateKey(){
             return privateKey;
         }

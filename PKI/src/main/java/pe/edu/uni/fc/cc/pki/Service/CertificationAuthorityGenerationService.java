@@ -30,7 +30,6 @@ import static pe.edu.uni.fc.cc.common.Constants.RSA_SIGN_ALGORITHM;
  * @author Usuario
  */
 public class CertificationAuthorityGenerationService {
-    
     //autofirma del certificado (solo se genera una unica vez)
     public X509Certificate createSelfSignedCertificate(KeyPair caKeyPair, String caDn,int validityYears){
         X509Certificate caCer=null;

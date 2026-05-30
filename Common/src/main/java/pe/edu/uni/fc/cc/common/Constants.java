@@ -47,7 +47,6 @@ public class Constants {
      
      public static final String ECC_ALGORITHM="EC";
      public static final String ECC_SIGN_ALGORITHM="SHA256withECDSA";
-     //public static final String RSA_SIGN_ALGORITHM="SHA256WithRSA";
      
      public static final String ECC_KEY_PARAMETER_SPEC="secp256r1";
      
@@ -63,6 +62,9 @@ public class Constants {
      public static final String USER_CD_FILENAME=Paths.get(USER_HOME,"user-cd.crt").toString();
      public static final String CA_ROOT_CONTAINER_FILENAME=Paths.get(USER_HOME,"ca-root-container.p12").toString();
      
+     //para usuario final
+     public static final String END_USER_CONTAINER_FILENAME=Paths.get(USER_HOME,"end-user-container.p12").toString();
+     public static final String END_USER_ALIAS="end_user_alias";
 }
 
 
