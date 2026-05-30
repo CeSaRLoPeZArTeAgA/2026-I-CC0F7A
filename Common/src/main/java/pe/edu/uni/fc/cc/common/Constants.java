@@ -56,10 +56,13 @@ public class Constants {
       //para certificado CA
      public static final String RSA_SIGN_ALGORITHM="SHA256withRSA";
      public static final String BCFIPS_PROVIDER="BCFIPS";
+     public static final String CA_ROOT_ALIAS="ca_root_alias";
      
      //file names
      public static final String USER_HOME=System.getProperty("user.home");
      public static final String USER_CD_FILENAME=Paths.get(USER_HOME,"user-cd.crt").toString();
+     public static final String CA_ROOT_CONTAINER_FILENAME=Paths.get(USER_HOME,"ca-root-container.p12").toString();
+     
 }
 
 
