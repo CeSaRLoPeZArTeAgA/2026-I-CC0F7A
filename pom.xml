@@ -14,6 +14,7 @@
         <module>Asymmetric</module>
         <module>DigitalEnvelope</module>
         <module>PKI</module>
+        <module>TLsProtocol</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

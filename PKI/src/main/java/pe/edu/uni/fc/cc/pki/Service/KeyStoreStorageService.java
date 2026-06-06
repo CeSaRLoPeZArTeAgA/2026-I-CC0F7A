@@ -52,6 +52,25 @@ public class KeyStoreStorageService {
         }
     }
     
+    public void saveToTrustStore(String filePath, String password, String alias, X509Certificate certificate){
+        try {
+            KeyStore ts=KeyStore.getInstance(PKCS12_KEYSTORE_TYPE);
+            ts.load(null,null);
+            ts.setCertificateEntry(alias, certificate);
+            try (FileOutputStream fos=new FileOutputStream(filePath)){
+                ts.store(fos, password.toCharArray());
+            }
+        } catch (KeyStoreException ex) {
+            System.getLogger(KeyStoreStorageService.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+        } catch (IOException ex) {
+            System.getLogger(KeyStoreStorageService.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+        } catch (NoSuchAlgorithmException ex) {
+            System.getLogger(KeyStoreStorageService.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+        } catch (CertificateException ex) {
+            System.getLogger(KeyStoreStorageService.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+        }
+    }
+    
     public Credential loadKeyMaterialFromPKCS12File(String filePath,String password,String alias){
         Credential credential =null;
         try {

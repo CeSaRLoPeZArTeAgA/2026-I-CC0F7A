@@ -61,10 +61,17 @@ public class Constants {
      public static final String USER_HOME=System.getProperty("user.home");
      public static final String USER_CD_FILENAME=Paths.get(USER_HOME,"user-cd.crt").toString();
      public static final String CA_ROOT_CONTAINER_FILENAME=Paths.get(USER_HOME,"ca-root-container.p12").toString();
-     
-     //para usuario final
+     public static final String SERVER_TLS_FILENAME=Paths.get(USER_HOME,"server-tls.p12").toString();
+     public static final String CLIENT_TLS_FILENAME=Paths.get(USER_HOME,"client-tls.p12").toString();
+    //para usuario final
      public static final String END_USER_CONTAINER_FILENAME=Paths.get(USER_HOME,"end-user-container.p12").toString();
      public static final String END_USER_ALIAS="end_user_alias";
+     public static final String SERVER_TLS_ALIAS="server_tls";
+     public static final String CLIENT_TLS_ALIAS="truststore";
+     
+     public static final int TLS_PORT = 8443;
+     public static final String TLS_VERSION_1_3="TLSv1.3";
+     
 }
 
 
