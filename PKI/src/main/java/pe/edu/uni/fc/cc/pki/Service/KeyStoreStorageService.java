@@ -52,6 +52,7 @@ public class KeyStoreStorageService {
         }
     }
     
+    //USADO POR EL CLIENTE PARA CONETAR CON EL SERVIDOR
     public void saveToTrustStore(String filePath, String password, String alias, X509Certificate certificate){
         try {
             KeyStore ts=KeyStore.getInstance(PKCS12_KEYSTORE_TYPE);
