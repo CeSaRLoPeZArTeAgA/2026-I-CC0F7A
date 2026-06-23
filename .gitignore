@@ -1,1 +1,21 @@
-/PKI/target/
+# Maven - archivos generados
+target/
+**/target/
+
+# Archivos compilados Java
+*.class
+*.jar
+*.war
+*.ear
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# VS Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
