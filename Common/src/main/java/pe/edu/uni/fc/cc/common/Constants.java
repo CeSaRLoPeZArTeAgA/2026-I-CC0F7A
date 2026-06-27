@@ -30,7 +30,8 @@ public class Constants {
      //longitud de TAG 128 bits
      public static final int TAG_LENGTH=128;
      
-     
+     public static final String SUNPKCS11_PROVIDER="SunPKCS11";
+     public static final String PKCS11_KEYSTORE_TYPE="PKCS11";
      
      //para el contenedor
      public static final String PKCS12_KEYSTORE_TYPE="PKCS12";

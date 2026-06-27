@@ -16,6 +16,7 @@
          <module>DigitalSignature</module>
         <module>PKI</module>
         <module>TLsProtocol</module>
+        <module>PKCS11</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
