@@ -19,7 +19,7 @@ public class Constants {
      public static final String PBKDF2_WITH_HMAC_SHA_256_ALGORITHM="PBKDF2WithHmacSHA256";
      
      public static final String TRANSFOMATION_AES_GCM="AES/GCM/NoPadding";
-     
+     public static final String TRANSFOMATION_RSA="RSA/ECB/PKCS1Padding";
      
      //tamaño de vector de inicializacio en AES CBC, 16 bytes
      public static final int AES_CBC_IV_LENGTH=16;
