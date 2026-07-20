@@ -27,7 +27,7 @@ public class MainProtocolDigitalSignature {
         //generar llaves
         rsaKeyGeneratorService.generateKeyPair();
         if(rsaKeyGeneratorService.getRsaPrivateKey()==null){
-            System.out.println("[Error] No se pudieron generar las llavves criptograficass");
+            System.out.println("[Error critico] No se pudieron generar las llavves criptograficass");
             return;
         }
         
